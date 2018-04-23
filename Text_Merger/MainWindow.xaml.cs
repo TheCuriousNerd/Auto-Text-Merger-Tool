@@ -149,6 +149,9 @@ namespace Text_Merger
 
             Utilities.OverWriteToFile("Merged_Text.txt", "Merged_Text", String_Combination.Merged_Text);
 
+            string merged_file_path = string.Empty;
+            merged_file_path = System.IO.Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "Merged_Text\\", "Merged_Text.txt");
+            Clipboard.SetText(merged_file_path);
 
         }
 
